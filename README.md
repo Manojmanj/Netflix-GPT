@@ -34,6 +34,9 @@
 - TMDB image CDN
 - Made the Browse page amazing with tailwind css
 - Use of Custom Hook to fetch different movie Categories
+- GPT Search Page
+- GPT Search Bar
+- Multi-Language Feature in Our App
 
 # Features
 
