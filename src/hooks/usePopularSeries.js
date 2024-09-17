@@ -20,7 +20,7 @@ const usePopularSeries = () => {
   };
 
   useEffect(() => {
-    !popularSeries && getPopularSeries();
+    getPopularSeries();
   }, []);
 };
 

@@ -20,7 +20,7 @@ const useTopRatedSeries = () => {
   };
 
   useEffect(() => {
-    !topRatedSeries && getTopRatedSeries();
+    getTopRatedSeries();
   }, []);
 };
 
