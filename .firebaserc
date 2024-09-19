@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "netflix-gpt-522da"
-  }
+    "default": "netflix-gpt-522da",
+    "production": "netflix-gpt-522da"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
