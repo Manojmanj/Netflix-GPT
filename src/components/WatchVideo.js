@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import useWatchVideo from "../hooks/useWatchVideo";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { removeWatchVideo } from "../utils/moviesSlice";
 
 const WatchVideo = () => {
+  const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
-  console.log(searchParams.get("v"));
+  // console.log(searchParams.get("v"));
 
   const watchVideo = useSelector((store) => store.movies?.watchVideo);
-  console.log(watchVideo);
+  // console.log(watchVideo);
 
   useWatchVideo(searchParams.get("v"));
+
+  useEffect(() => {
+    return () => {
+      dispatch(removeWatchVideo());
+    };
+  }, []);
 
   return (
     <div>

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
-import { addWatchVideo } from "../utils/moviesSlice";
+import { addWatchVideo, removeWatchVideo } from "../utils/moviesSlice";
 import { useEffect } from "react";
 
 const useWatchVideo = (movieId) => {
